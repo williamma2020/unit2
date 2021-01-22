@@ -120,7 +120,12 @@ ul.skills {
   background: #856809;
 }
 .figure { 
-  margin: 10px; 
+  margin: 0px; 
+}
+
+img {
+  width: 90%;
+  height: auto;
 }
 
 footer {
