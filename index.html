@@ -4,34 +4,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>unit2 css</title>
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-	<header class="main-header">
-		<div class="container clearfix">
+	<header>
+
 			<h1 class="name">William Ma</h1>
-			<ul class="main-nav">
-				<li><a href="#">home</a></li>
-				<li><a href="portfolio/index.html">portfolio</a></li>
-				<li><a href="portfolio/articles/contact/contact.html">contact</a></li>
-			</ul>
-		</div>
-	</header><!--/.main-header-->   
-	
-	<main>
-		<div class="banner">
+			<nav class="main-nav">
+				<a href="#">home</a>
+				<a href="portfolio/index.html">portfolio</a>
+				<a href="portfolio/articles/contact/contact.html">contact</a>
+			</nav>
+
 			<figure>
-				<img class="me" src="images/me.png" alt="people">
-				<figcaption>Hi! I am a web designer student, I love to do design work, my favorit part is using css code create fantastic web page. this work make me feels playing game. can not wait to start real project.
+				<img src="images/responsive-layout-profile.png" alt="people">
+				<figcaption>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!
 				</figcaption>
 			</figure>	
-		</div><!--/.banner-->
+
+	</header><!--/.main-header-->   
+
+		<div class="container clearfix">
 
         <h2 class="headline"><a href="portfolio/index.html">portfolio</a></h2>
 	
-		<div class="container clearfix">
 			<div class="marketing col">
 				<img class="marketing" src="images/portfolio-1.png" alt="marketing">
 				<h2>Market Page</h2>
@@ -70,25 +68,25 @@
 				<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
 			</div><!--/.tertiary-->	
 		
-			
 		</div>
-
+	
+	<footer>
 		<h2 class="headline">contact</h2>
-		<ul class="tagline">
-			<li><strong>Phone:</strong>(250) 206-4869</li>
-			<li><strong>Email:</strong><a href="mailto:williamma2020@icloud.com">williamma2020@icloud.com</a></li>
-
+		<p>if you're interested in chatting or want more information about what I've been working on, I'd love to hear from you! </p>
+		
+		<ul class="contact">
+			<li>Phone:<strong>+1(111) 555-1234</strong></li>
+			<li>Email:<strong>email@yoursite.com</strong></li>
 		</ul>
-	</main>
 
-	<footer class="main-footer">
-		<ul>
-			<li><a href="mailto:williamma2020@icloud.com?subject=hi%20there!" class="social email">email</a></li>
-			<li><a href="https://www.linkedin.com/in/williamma2004" class="social linkedin">LinkedIn</a></li>
-			<li><a href="https://github.com/williamma2020" class="social github">Github</a></li>
-		  </ul>
-		  <span>&copy;Copyright 2020, William Ma</span>
 	</footer>
+	<!-- main-footer -->
+
+	<ul class="foot">
+		<li>Student name</li>
+		<li><a href="#top">Back to top &raquo;</a></li>
+	</ul>
+	
 	
 </body>
 </html>
