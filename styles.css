@@ -54,6 +54,7 @@ body {
 
 footer {
     background-color: linen;
+    padding-top:10px;
 }
 
 
@@ -74,15 +75,28 @@ figcaption {
   Base Layout Styles
 ==================================== */
 
-ul {
-    margin: 10px;
-}
 
-.foot li {
+
+.secondary-footer p {
     display:inline-block;
-    padding:0 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: left;
+    margin:0;
+}
+
+.secondary-footer a {
+    display:inline-block;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: right;
+    margin:0;
 
 }
+
+
 
 
 /* ---- navagation ---- */
@@ -102,13 +116,13 @@ nav a {
 
 }
 
-.contact li {
+
+
+.main-footer ul {
     font-family: fantasy;
-    padding: 5px;
+    padding: 5px 15%;
     font-size: large;
 }
-
-
 
 /* ---- Layout Containers ---- */
 
@@ -122,6 +136,12 @@ nav a {
   media queries
 ==================================== */
 
+/* mobile */
+
+@media (min-width:320px) {}
+
+
+/* tablet */
 
 @media (min-width:768px) {
 	.container{
