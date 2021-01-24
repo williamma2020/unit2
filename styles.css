@@ -4,14 +4,24 @@
 
 * {
     box-sizing:border-box;
-    /* border:1px solid red; */
+    border:1px solid red;
 }
 
 header {
     background-color: linen;
-
+    padding-top:12px;
+    padding-bottom:12px;
 }
 
+
+
+.feat-image {
+    margin-bottom: .5em;
+}
+
+figcaption {
+    margin:15px;
+}
 
 
 h1 {
@@ -22,7 +32,7 @@ h1 {
     border-bottom: 4px solid #cc7b23;
     text-align: center;
     text-shadow: 0 2px 0 rgba(230, 79, 20, 0.4);
-    margin:12px;
+    margin:0 12px 12px 12px;
     border-radius: 10px;
 
 }
@@ -30,6 +40,7 @@ h1 {
 h2 {
     font-family: emoji;
     text-align: center;
+    
 }
 
     h2::first-letter {
@@ -41,13 +52,21 @@ h2 {
         text-transform: uppercase;
     }
 
-p {
-    margin:10px;
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: normal;
+    margin:15px;
     text-align: center;
+    
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    margin:15px;
 }
 
 
@@ -64,8 +83,13 @@ img {
 	max-width: 100%;
 }
 
-figcaption {
-    padding:10px;
+.secondary-footer a {
+    display: inline-block;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: left: ;
+    margin: 10px 12px;
 }
 
 
@@ -75,33 +99,13 @@ figcaption {
   Base Layout Styles
 ==================================== */
 
-
-
-.secondary-footer p {
-    display:inline-block;
-    padding-left: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    float: left;
-    margin:0;
-}
-
-.secondary-footer a {
-    display:inline-block;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    float: right;
-    margin:0;
-
-}
-
-
-
-
 /* ---- navagation ---- */
 
-nav a {
+
+
+
+
+.main-nav a {
     text-align: center;
     font-size: 1.5em;
     font-family:fantasy;
@@ -124,11 +128,36 @@ nav a {
     font-size: large;
 }
 
-/* ---- Layout Containers ---- */
+/* .ft-name {
+    padding:0;
+
+}
+
+.secondary-footer {
+    display:block;
+
+}
+.ft-name {
+    float:left;
+
+}
+
+.ft-top {
+    float:right;
+} */
 
 
 
-/* ---- Page Elements ---- */
+
+
+
+
+/* clearfix */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 
 
@@ -144,10 +173,85 @@ nav a {
 /* tablet */
 
 @media (min-width:768px) {
+
+    .wrap {
+        min-height: 100vh;
+    }
+
+    header {
+        padding-bottom:2em;
+    }
+
 	.container{
-		width:70%;
+		width:80%;
 		max-width:1000px;
 		margin:0 auto;
-	}
+    }
+
+    h1 {
+        width:300px;
+        margin:10px auto;
+    }
+
+    h3 {
+        display:block;
+        float: left;
+        width:40%
+        
+
+    }
+    
+    img {
+        float: right;
+        width:50%;
+        padding-top:20px;
+        padding-bottom:20px;
+        
+    }
+
+    .container img {
+        width:300px;
+    }
+
+    .main-nav,
+    a {
+        margin:auto;
+    }
+
+    nav a {
+        width:fit-content;
+        display:inline-block;
+        margin:15px auto;
+       
+        
+    }
+
+    li {
+        margin:auto;
+    }
+
+
+    .col {
+        float:left;
+        margin:15px 30px;
+        width:40%;
+    }
+
+    .main-footer ul {
+        font-family: fantasy;
+        font-size: large;
+        display:block;
+        width:fit-content;
+        margin:auto;
+    }
+
+
+
+
+
+
+
+
+
 
 }
