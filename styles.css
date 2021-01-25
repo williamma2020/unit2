@@ -17,6 +17,8 @@ header {
 
 .feat-image {
     margin-bottom: .5em;
+    float:right;
+
 }
 
 figcaption {
@@ -88,8 +90,9 @@ img {
     padding-right: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
-    float: left: ;
+    /* float: left; */
     margin: 10px 12px;
+    
 }
 
 
@@ -105,7 +108,7 @@ img {
 
 
 
-.main-nav a {
+.main-nav li {
     text-align: center;
     font-size: 1.5em;
     font-family:fantasy;
@@ -121,33 +124,11 @@ img {
 }
 
 
-
-.main-footer ul {
-    font-family: fantasy;
-    padding: 5px 15%;
-    font-size: large;
-}
-
-/* .ft-name {
-    padding:0;
-
-}
-
-.secondary-footer {
+.main-footer a {
     display:block;
-
+    margin:10px auto;
+    width:fit-content;
 }
-.ft-name {
-    float:left;
-
-}
-
-.ft-top {
-    float:right;
-} */
-
-
-
 
 
 
@@ -165,71 +146,39 @@ img {
   media queries
 ==================================== */
 
-/* mobile */
+/* 1.mobile */
 
-@media (min-width:320px) {}
+@media (min-width:320px) {
+
+    
+}
 
 
-/* tablet */
+@media (max-width:700px) {
+    .third-footer {
+        display: none;
+    }
+}
+
+
+
+/* 2.tablet */
 
 @media (min-width:768px) {
 
-    .wrap {
-        min-height: 100vh;
-    }
-
+    
     header {
-        padding-bottom:2em;
-    }
 
-	.container{
-		width:80%;
-		max-width:1000px;
-		margin:0 auto;
-    }
-
-    h1 {
-        width:300px;
-        margin:10px auto;
-    }
-
-    h3 {
-        display:block;
-        float: left;
-        width:40%
-        
-
+        padding-bottom: 3.8em;
     }
     
-    img {
-        float: right;
-        width:50%;
-        padding-top:20px;
-        padding-bottom:20px;
-        
-    }
 
-    .container img {
-        width:300px;
+    
+    .container {
+        width:100%;
+        /* max-width: 1000px; */
+        margin:0 auto;
     }
-
-    .main-nav,
-    a {
-        margin:auto;
-    }
-
-    nav a {
-        width:fit-content;
-        display:inline-block;
-        margin:15px auto;
-       
-        
-    }
-
-    li {
-        margin:auto;
-    }
-
 
     .col {
         float:left;
@@ -237,18 +186,93 @@ img {
         width:40%;
     }
 
-    .main-footer ul {
-        font-family: fantasy;
-        font-size: large;
-        display:block;
-        width:fit-content;
+    h1 {
+        width:300px;
         margin:auto;
+    }
+
+    
+    .main-nav li {
+        display:inline-block;
+        margin:10px auto;
+    }
+
+    .main-nav {
+        width:fit-content;
+        margin:10px auto;
+    }
+    
+    .main-footer li {
+        display:block;
+        margin:10px auto;
+        width:fit-content;
+    }
+
+    .secondary-footer {
+        display:none;
+    }
+ 
+
+/* question: */
+
+    .third-footer a {
+        display:block;
+        margin:10px auto;
+        width:fit-content;
+    }
+
+
+
+    .third-footer li {
+        text-align: center;
+        font-size: 1em;
+        font-family:fantasy;
+        color:black;
+        display:inline-block;
+        background-color:lightgray;
+        margin: 0 auto;
+        padding: 0 10px;
+        border-bottom: 4px solid #595d98;
+        border-radius: 5px;
+    }
+
+    .ft-nav {
+        float:right;
     }
 
 
 
 
+    }
 
+
+   
+
+
+/* 3. desktop */
+@media (min-width:1024px) {
+
+
+    .container {
+        width:100%;
+        margin:0 auto;
+    }
+
+    .col {
+        float:left;
+        margin:15px 30px;
+        width:24%;
+    }
+
+    header {
+
+        padding-bottom:6.5em;
+    
+    }
+
+    .secondary-footer {
+        display:none;
+    }
 
 
 
