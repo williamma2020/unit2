@@ -10,13 +10,13 @@
 header {
     background-color: linen;
     padding-top:12px;
-    padding-bottom:12px;
+    width:90%;
+    margin:0 auto;
 }
 
 
 
 .feat-image {
-    margin-bottom: .5em;
     float:right;
 
 }
@@ -60,7 +60,7 @@ h3 {
     font-weight: normal;
     margin:15px;
     text-align: center;
-    
+
 }
 
 body {
@@ -71,29 +71,20 @@ p {
     margin:15px;
 }
 
-
-
-footer {
-    background-color: linen;
-    padding-top:10px;
-}
-
-
-
-
 img {
 	max-width: 100%;
 }
 
-.secondary-footer a {
-    display: inline-block;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    /* float: left; */
-    margin: 10px 12px;
-    
+footer {
+    background-color: linen;
+    padding-top:10px;
+    width: 90%;
+    margin:0 auto;
 }
+
+
+
+
 
 
 
@@ -124,11 +115,36 @@ img {
 }
 
 
-.main-footer a {
+.main-footer li {
     display:block;
     margin:10px auto;
     width:fit-content;
 }
+
+/* <!-- secondary-footer -->
+		<footer class="secondary-footer clearfix">
+			
+			<ul>
+				<a href="#">student name</a>
+				<a href="#top">back to top &raquo;</a>
+			</ul>
+		
+		</footer> */
+
+.secondary-footer a {
+    display:inline-block;
+    margin:0 auto;
+    padding:0 12px;
+}
+
+/* .secondary-footer a {
+    display: inline-block;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px 12px; */
+
+
 
 
 
@@ -149,6 +165,12 @@ img {
 /* 1.mobile */
 
 @media (min-width:320px) {
+    .container {
+        width:90%;
+        /* max-width: 1000px; */
+        margin:0 auto;
+    }
+
 
     
 }
@@ -167,23 +189,20 @@ img {
 @media (min-width:768px) {
 
     
-    header {
 
-        padding-bottom: 3.8em;
-    }
     
 
     
     .container {
-        width:100%;
+        width:90%;
         /* max-width: 1000px; */
         margin:0 auto;
     }
 
     .col {
         float:left;
-        margin:15px 30px;
-        width:40%;
+        margin:15px 5px;
+        width:48.5%;
     }
 
     h1 {
@@ -213,9 +232,9 @@ img {
     }
  
 
-/* question: */
 
-    .third-footer a {
+
+    .footer-nav a {
         display:block;
         margin:10px auto;
         width:fit-content;
@@ -223,7 +242,7 @@ img {
 
 
 
-    .third-footer li {
+    .footer-nav li {
         text-align: center;
         font-size: 1em;
         font-family:fantasy;
@@ -234,13 +253,18 @@ img {
         padding: 0 10px;
         border-bottom: 4px solid #595d98;
         border-radius: 5px;
-    }
-
-    .ft-nav {
         float:right;
     }
 
 
+    h3 {
+        display:block;
+        width:fit-content;
+        float:left;
+
+    }
+
+    
 
 
     }
@@ -254,21 +278,17 @@ img {
 
 
     .container {
-        width:100%;
+        width:90%;
         margin:0 auto;
     }
 
     .col {
         float:left;
-        margin:15px 30px;
-        width:24%;
+        margin:15px 5px;
+        width:32%;
     }
 
-    header {
 
-        padding-bottom:6.5em;
-    
-    }
 
     .secondary-footer {
         display:none;
