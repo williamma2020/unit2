@@ -15,9 +15,11 @@ header {
 }
 
 
-
 .feat-image {
     float:right;
+    box-shadow:2px 2px 2px 2px orange;
+    margin-right:4px;
+    margin-bottom:4px;
 
 }
 
@@ -72,20 +74,31 @@ p {
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
+    
 }
+
 
 footer {
     background-color: linen;
     padding-top:10px;
     width: 90%;
     margin:0 auto;
+    border-bottom: 4px solid #cc7b23;
+    border-radius: 10px;
+}
+
+.secondary-footer,
+.third-footer {
+    background-color: white;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 
-
-
-
+a:hover {
+    color:limegreen;
+}
 
 
 
@@ -94,9 +107,6 @@ footer {
 ==================================== */
 
 /* ---- navagation ---- */
-
-
-
 
 
 .main-nav li {
@@ -121,30 +131,13 @@ footer {
     width:fit-content;
 }
 
-/* <!-- secondary-footer -->
-		<footer class="secondary-footer clearfix">
-			
-			<ul>
-				<a href="#">student name</a>
-				<a href="#top">back to top &raquo;</a>
-			</ul>
-		
-		</footer> */
+
 
 .secondary-footer a {
     display:inline-block;
     margin:0 auto;
     padding:0 12px;
 }
-
-/* .secondary-footer a {
-    display: inline-block;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 10px 12px; */
-
-
 
 
 
@@ -167,14 +160,11 @@ footer {
 @media (min-width:320px) {
     .container {
         width:90%;
-        /* max-width: 1000px; */
+   
         margin:0 auto;
     }
-
-
-    
+ 
 }
-
 
 @media (max-width:700px) {
     .third-footer {
@@ -183,19 +173,13 @@ footer {
 }
 
 
-
 /* 2.tablet */
 
 @media (min-width:768px) {
 
-    
-
-    
-
-    
     .container {
         width:90%;
-        /* max-width: 1000px; */
+   
         margin:0 auto;
     }
 
@@ -210,6 +194,11 @@ footer {
         margin:auto;
     }
 
+    h3 {
+        display:block;
+        width:fit-content;
+        float:left;
+    }
     
     .main-nav li {
         display:inline-block;
@@ -220,6 +209,7 @@ footer {
         width:fit-content;
         margin:10px auto;
     }
+    
     
     .main-footer li {
         display:block;
@@ -232,15 +222,15 @@ footer {
     }
  
 
-
-
     .footer-nav a {
         display:block;
         margin:10px auto;
         width:fit-content;
     }
 
-
+    .footer-nav {
+        float:right;
+    }
 
     .footer-nav li {
         text-align: center;
@@ -249,22 +239,12 @@ footer {
         color:black;
         display:inline-block;
         background-color:lightgray;
-        margin: 0 auto;
+        margin: 0 5px;
         padding: 0 10px;
         border-bottom: 4px solid #595d98;
         border-radius: 5px;
-        float:right;
-    }
-
-
-    h3 {
-        display:block;
-        width:fit-content;
         float:left;
-
     }
-
-    
 
 
     }
@@ -274,6 +254,7 @@ footer {
 
 
 /* 3. desktop */
+
 @media (min-width:1024px) {
 
 
@@ -288,14 +269,13 @@ footer {
         width:32%;
     }
 
-
+    p {
+        margin: 15px auto;
+        max-width: 40em;
+    }
 
     .secondary-footer {
         display:none;
     }
-
-
-
-
 
 }
