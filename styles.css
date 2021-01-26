@@ -203,11 +203,12 @@ a:hover {
 
     .feat-image {
         margin-bottom: 0;
+        margin-left:15px;
     }
     
     .main-nav li {
         display:inline-block;
-        margin:10px auto;
+        margin: 10px 20px;
     }
 
     .main-nav {
@@ -267,6 +268,7 @@ a:hover {
         width:90%;
         margin:0 auto;
     }
+
 
     .col {
         float:left;
