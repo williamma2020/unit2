@@ -4,7 +4,7 @@
 
 * {
     box-sizing:border-box;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 header {
@@ -15,16 +15,17 @@ header {
 }
 
 
+
 .feat-image {
     float:right;
-    box-shadow:2px 2px 2px 2px orange;
-    margin-right:4px;
-    margin-bottom:4px;
-
+    margin-bottom: 15px;
 }
 
-figcaption {
+
+h4 {
     margin:15px;
+    font-weight: normal;
+    text-align: center;
 }
 
 
@@ -198,6 +199,10 @@ a:hover {
         display:block;
         width:fit-content;
         float:left;
+    }
+
+    .feat-image {
+        margin-bottom: 0;
     }
     
     .main-nav li {
