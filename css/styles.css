@@ -17,8 +17,8 @@ header {
 
 
 .feat-image {
-    float:right;
-    margin-bottom: 15px;
+    box-shadow: 0 0 2px 0 orange;
+    
 }
 
 
@@ -110,9 +110,11 @@ a:hover {
 /* ---- navagation ---- */
 
 
+
+
 .main-nav li {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-family:fantasy;
     color:black;
 
@@ -126,18 +128,26 @@ a:hover {
 }
 
 
+
+
 .main-footer li {
     display:block;
     margin:10px auto;
     width:fit-content;
 }
 
+.block1 {
+    float:left;
+    display:block;
+}
 
+.block2 {
+    float:right;
+    display:block;
+}
 
-.secondary-footer a {
+.secondary-footer ul {
     display:inline-block;
-    margin:0 auto;
-    padding:0 12px;
 }
 
 
@@ -161,9 +171,9 @@ a:hover {
 @media (min-width:320px) {
     .container {
         width:90%;
-   
         margin:0 auto;
     }
+
  
 }
 
@@ -172,6 +182,9 @@ a:hover {
         display: none;
     }
 }
+
+
+
 
 
 /* 2.tablet */
@@ -201,9 +214,15 @@ a:hover {
         float:left;
     }
 
+    h4 {
+        padding-top:2em;
+    }
+
     .feat-image {
-        margin-bottom: 0;
+        margin-bottom: 5px;
         margin-left:15px;
+        margin-right:15px;
+        float:right;
     }
     
     .main-nav li {
@@ -253,22 +272,63 @@ a:hover {
     }
 
 
+
     }
 
 
-   
 
 
 /* 3. desktop */
 
 @media (min-width:1024px) {
 
+    .name {
+        width: fit-content;
+        float:left;
+    }
+
+    .main-nav {
+        float:right;
+    }
+
+    .main-nav li{
+        float:left;
+        margin-top:5px;
+    }
+
+
+    .feat-image {
+        margin-bottom: 10px;
+        float:right;
+        box-shadow: 0 0 2px 0 orange;
+    }
+
+    .feature {
+        display:block;
+        width:90%;
+        margin:auto;
+    }
 
     .container {
         width:90%;
         margin:0 auto;
     }
 
+    h1 {
+        margin-top:15px;
+    }
+
+    h3 {
+        display:inline-block;
+        width:fit-content;
+    }
+
+    h4 {
+  
+        padding-top: 2em;
+        text-align: left;
+
+    }
 
     .col {
         float:left;
@@ -284,5 +344,31 @@ a:hover {
     .secondary-footer {
         display:none;
     }
+
+    .footer-nav a {
+        display:block;
+        margin:10px auto;
+        width:fit-content;
+    }
+
+    .footer-nav {
+        float:right;
+    }
+
+    .footer-nav li {
+        text-align: center;
+        font-size: 1em;
+        font-family:fantasy;
+        color:black;
+        display:inline-block;
+        background-color:lightgray;
+        margin: 0 5px;
+        padding: 0 10px;
+        border-bottom: 4px solid #595d98;
+        border-radius: 5px;
+        float:left;
+    }
+
+
 
 }

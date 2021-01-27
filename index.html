@@ -4,9 +4,9 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>unit2 css</title>
-		<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="normalize.css">
-		<link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
 
 	<body>
@@ -21,12 +21,12 @@
 
 				<ul class="main-nav">
 					<li><a href="#">home</a></li>
-					<li><a href="portfolio/index.html">portfolio</a></li>
-					<li><a href="portfolio/articles/contact/contact.html">contact</a></li>
+					<li><a href="#portfolio">portfolio</a></li>
+					<li><a href="#contact">contact</a></li>
 				</ul>
 			</div> 
 			
-			<div>
+			<div class="feature">
 				<img class="feat-image" src="images/responsive-layout-profile.png" alt="people">
 				<h4>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</h4>
 			</div>
@@ -39,7 +39,7 @@
 		
 <!-- second box:containers -->
 		<div class="container clearfix">
-			<h2 class="headline">portfolio</h2>
+			<h2 id="portfolio" class="headline">portfolio</h2>
 
 			<div class="col">
 				<img class="market" src="images/portfolio-1.png" alt="marketing">
@@ -85,7 +85,7 @@
 		
 		<footer class="main-footer clearfix">
 			
-				<h2 class="headline">contact</h2>
+				<h2 id="contact" class="headline">contact</h2>
 				<p>if you're interested in chatting or want more information about what I've been working on, I'd love to hear from you! </p>
 				
 				<ul>
@@ -100,9 +100,18 @@
 <!-- secondary-footer -->
 		<footer class="secondary-footer clearfix">
 			
-				<a href="#">student name</a>
-				<a href="#top">back to top &raquo;</a>
-		
+			<ul class="block1">
+				<li>
+					<a href="#">student name</a>
+				</li>
+			</ul>
+			
+			<ul class="block2">
+				<li>
+					<a href="#top">back to top &raquo;</a>
+				</li>
+			</ul>
+				
 		</footer>
 
 <!-- third-footer -->
@@ -112,8 +121,8 @@
 			
 				<ul class="footer-nav">
 					<li ><a href="#">home</a></li>
-					<li><a href="portfolio/index.html">portfolio</a></li>
-					<li><a href="portfolio/articles/contact/contact.html">contact</a></li>
+					<li><a href="#portfolio">portfolio</a></li>
+					<li><a href="#contact">contact</a></li>
 				</ul>
 			
 		</footer>
